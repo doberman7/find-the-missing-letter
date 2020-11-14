@@ -63,6 +63,6 @@ function findMissingLetter(array) {
   }
   //comparar muestras
   let results = arr_diff(array,correctsegment)
-
+  //retornar letra faltante
   return results[results.length-1]
 }
