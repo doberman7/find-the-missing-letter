@@ -8,7 +8,7 @@ function findMissingLetter(array) {
   let correctsegment = []
   let indexOfcoincidece = null
   let times = array.length;
-
+  //ontenerr muestra de mayuusculas
   mai.forEach((element, index) => {
     //obtener indice donde 1era letra y elemento de abecedario coinciden
     if (element == firstLetter) {
@@ -22,7 +22,7 @@ function findMissingLetter(array) {
       }
     }
   });
-
+  ////ontenerr muestra de minusculas
   min.forEach((element, index) => {
     //obtener indice donde 1era letra y elemento de abecedario coinciden
     if (element == firstLetter) {
@@ -36,7 +36,7 @@ function findMissingLetter(array) {
       }
     }
   });
-
+  //funcion que differencia entre dos arrays
   function arr_diff(a1, a2) {
 
     let a = [],
@@ -60,8 +60,8 @@ function findMissingLetter(array) {
 
     return diff;
   }
-
+  //comparar muestras
   let results = arr_diff(array,correctsegment)
 
-  console.log(results[results.length-1]);
+  return results[results.length-1]
 }
